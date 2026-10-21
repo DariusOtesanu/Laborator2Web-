@@ -1,39 +1,48 @@
 
-# WeatherNow
+# Vremea by BusuDarius🌦️
 
-WeatherNow este un site meteo realizat cu HTML5, CSS și JavaScript.
+BusuDarius este o aplicație web meteo realizată cu HTML, CSS și JavaScript, care afișează condițiile meteorologice și prognoza pentru localități din România.
 
 ## Funcționalități
 
-- Căutarea unui oraș.
-- Afișarea temperaturii actuale.
-- Afișarea umidității și vitezei vântului.
-- Prognoza meteo pentru următoarele 5 zile.
-- Design responsive pentru calculator, tabletă și telefon.
-- Integrarea API-ului Open-Meteo.
+- Căutarea localităților din România prin API de geocodare.
+- Sugestii de localități în timpul introducerii numelui.
+- Afișarea temperaturii actuale și a temperaturii resimțite.
+- Afișarea umidității, vântului și precipitațiilor.
+- Afișarea indicelui UV, răsăritului și apusului.
+- Prognoză meteo pe 7 zile.
+- Temperaturi maxime și minime.
+- Probabilitatea precipitațiilor.
+- Simboluri pentru soare, nori, ceață, burniță, ploaie, ninsoare și furtuni.
+- Interfață adaptată pentru calculator, tabletă și telefon.
 
-## Tehnologii
+## Tehnologii utilizate
 
 - HTML5
 - CSS3
 - JavaScript
-- Open-Meteo Forecast API
 - Open-Meteo Geocoding API
+- Open-Meteo Forecast API
+- Visual Studio Code
 
 ## Cum se utilizează
 
-1. Deschide fișierul `index.html` într-un browser.
-2. Introdu numele unui oraș.
-3. Apasă butonul „Caută”.
-4. Consultă vremea actuală și prognoza.
+1. Deschide proiectul în Visual Studio Code.
+2. Pornește aplicația cu Live Server.
+3. Introdu numele unei localități din România.
+4. Selectează localitatea dorită din sugestii.
+5. Apasă „Vezi vremea”.
+6. Consultă condițiile actuale și prognoza pe 7 zile.
 
-Este necesară o conexiune la internet pentru preluarea datelor meteo.
+Este necesară o conexiune la internet pentru preluarea datelor.
 
-## Sursa datelor
+## API-uri
 
-https://open-meteo.com/
+Geocodare: https://geocoding-api.open-meteo.com/
 
-Datele sunt furnizate de Open-Meteo și sunt utilizate conform condițiilor și licenței serviciului.
+Prognoză: https://api.open-meteo.com/v1/forecast
+
+Site oficial: https://open-meteo.com/
 
 ## Autor
 
