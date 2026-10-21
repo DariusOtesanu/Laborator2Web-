@@ -1,0 +1,142 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eef4ff;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #123c69, #2563eb);
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    font-size: 2.3rem;
+}
+
+.container {
+    width: min(900px, 92%);
+    margin: 30px auto;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+h2 {
+    margin: 20px 0 12px;
+}
+
+#status {
+    margin: 15px 0;
+}
+
+.weather-card {
+    background: white;
+    border-radius: 16px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 5px 20px #00000010;
+}
+
+.temperature {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #2563eb;
+    margin: 10px 0;
+}
+
+.details {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.forecast {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.forecast-day {
+    background: white;
+    padding: 15px 8px;
+    border-radius: 12px;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+.forecast-day .symbol {
+    font-size: 1.7rem;
+}
+
+footer {
+    text-align: center;
+    padding: 25px 10px;
+    color: #64748b;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .container {
+        margin: 20px auto;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    form button {
+        width: 100%;
+    }
+
+    .forecast {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .details {
+        flex-direction: column;
+        gap: 5px;
+    }
+}

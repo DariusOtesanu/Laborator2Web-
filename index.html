@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherNow - Vremea</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>WeatherNow</h1>
+        <p>Verifică vremea în orașul tău</p>
+    </header>
+
+    <main class="container">
+        <form id="search-form">
+            <input id="city" type="text"
+                   placeholder="Introdu un oraș (ex. București)"
+                   value="București" required>
+            <button type="submit">Caută</button>
+        </form>
+
+        <p id="status" role="status">Se încarcă vremea...</p>
+
+        <section id="weather" class="weather-card" hidden>
+            <h2 id="city-name"></h2>
+            <p id="description"></p>
+            <p id="temperature" class="temperature"></p>
+
+            <div class="details">
+                <p>Umiditate: <strong id="humidity"></strong></p>
+                <p>Vânt: <strong id="wind"></strong></p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Prognoza pe următoarele 5 zile</h2>
+            <div id="forecast" class="forecast"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Date meteo: Open-Meteo API</p>
+    </footer>
+</body>
+</html>
